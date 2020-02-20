@@ -1,0 +1,120 @@
+:root{
+    --main-color: #1da1f2;
+    --dark-color: black;
+    --footer-link-color: #aab8c2;
+    --footer-top-border-color: #e6ecf0;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+p,a,h1,h2,h3,li,span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 95vh 5vh;
+}
+/* Comienzo de la parte izquierda de Twitter */
+.container .left-box{
+    background-color:var(--main-color);
+    grid-column: 1 / 2;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.left-box ul li{
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 50px 0;
+    font-weight: bold ;
+    color: white;
+} 
+
+.left-box ul li .ico{
+    font-size: 24px;
+    margin-right: 10px;
+}
+/* Comienzo de la Parte derecha de Twitter */
+.container .right-box{
+    background-color: white;
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right-box .contenedor{
+    min-width: 300px;
+    padding: 0 60px;
+
+}
+
+/* .container .right-box .contenedor .head{
+    display: flex;
+       justify-content: space-between;
+} */
+
+/* .container .right-box .contenedor h1{
+    font-size: 27px;
+    line-height: 32;
+    color: var(--dark-color);
+} */
+
+/* .container .right-box .contenedor p{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark-color);
+} */
+
+/* .container .right-box .contenedor .head .logo-icon{
+    font-size: 3em;
+    color: var(--main-color);
+} */
+
+/* parte de abajo de Twitter */
+.container .footer{
+    background-color:var(--footer-link-color);
+    grid-column: 1/-1;
+}
+
+
+/* botones */
+
+button.btn{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: bold;
+} 
+
+button.block{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+button.primero{
+    background-color: var(--main-color);
+    color: white;
+}
+
+button.segundo{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color) ;
+}
+
+
